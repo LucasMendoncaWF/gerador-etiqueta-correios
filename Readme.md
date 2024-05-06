@@ -7,10 +7,10 @@ Após acabar:
 ``` npm start ```
 
 Voce deve remover o 
-> "-model"
+``` "-model" ```
 
 do nome do arquivo
-> Remetente-model.tsx
+```Remetente-model.tsx```
 
 e preencher esse arquivo de acordo com seus dados
 
