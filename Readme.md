@@ -7,12 +7,15 @@ Após acabar:
 ``` npm start ```
 
 Voce deve remover o 
->-model
-no nome do arquivo
->-Remetente-model
-e preencher de acordo com seus dados
+> "-model"
 
-Após isso é preparar o arquivo .xsl para a conversão
+do nome do arquivo
+> Remetente-model.tsx
+
+e preencher esse arquivo de acordo com seus dados
+
+
+###Após isso é preparar o arquivo .xls para a conversão
 
 Deve possuir essas colunas:
 
@@ -30,4 +33,4 @@ Deve possuir essas colunas:
   }
 ```
 
-Agora é só selecionar seu arquivo, converter e imprimir!
+###Agora é só selecionar seu arquivo, converter e imprimir!
