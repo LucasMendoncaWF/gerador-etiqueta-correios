@@ -6,6 +6,8 @@ Comece instalando as dependencias:
 Após acabar:
 ``` npm start ```
 
+--------------------------------------------------
+
 Voce deve remover o 
 ``` "-model" ```
 
@@ -13,6 +15,9 @@ do nome do arquivo
 ```Remetente-model.tsx```
 
 e preencher esse arquivo de acordo com seus dados
+
+
+--------------------------------------------------
 
 
 ### Após isso é preparar o arquivo .xls para a conversão
@@ -33,4 +38,5 @@ Deve possuir essas colunas:
   }
 ```
 
+--------------------------------------------------
 ### Agora é só selecionar seu arquivo, converter e imprimir!
