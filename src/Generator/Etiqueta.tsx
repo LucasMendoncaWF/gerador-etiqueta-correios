@@ -25,7 +25,7 @@ export default function Etiqueta({
   return (
     <div className='tag'>
       <div className='dist'>
-        <p>{item['Nome Completo']}</p>
+        <p>{item['Nome Completo'].toLowerCase()}</p>
         <p className='street'>{item.Rua}, {item['Número']}, {item.Complemento}</p>
         <p>{item.Bairro}</p>
         <div className='d-flex'>
