@@ -15,7 +15,7 @@ do nome do arquivo
 e preencher esse arquivo de acordo com seus dados
 
 
-###Após isso é preparar o arquivo .xls para a conversão
+### Após isso é preparar o arquivo .xls para a conversão
 
 Deve possuir essas colunas:
 
@@ -33,4 +33,4 @@ Deve possuir essas colunas:
   }
 ```
 
-###Agora é só selecionar seu arquivo, converter e imprimir!
+### Agora é só selecionar seu arquivo, converter e imprimir!
