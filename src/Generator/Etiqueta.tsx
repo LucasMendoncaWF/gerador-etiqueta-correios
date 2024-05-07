@@ -4,7 +4,7 @@ import { Destinatario } from '@app/interface/Destinatario';
 import EtiquetaImg from '../assets/etiqueta.png';
 import { remetente } from './Remetente';
 
-declare const JsBarcode: (id: string, text: string, info: {displayValue: boolean}) => void;
+declare const JsBarcode: (id: string, text: string, info: {displayValue: boolean, width: number}) => void;
 
 export default function Etiqueta({
   item
