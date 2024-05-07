@@ -34,6 +34,14 @@ export default function Etiqueta({
         </div>
       </div>
 
+      <div className='obs'>
+        <p>{item.Obs}</p>
+      </div>
+
+      {item['Nome Vizinho'] && <div className='vizinho'>
+        <p>{item['Nome Vizinho']}</p>
+      </div>}
+
       <div className='rem'>
         <p><strong>Remetente:</strong> {remetente.nome}</p>
         <p>{remetente.rua} {remetente.numero}</p>

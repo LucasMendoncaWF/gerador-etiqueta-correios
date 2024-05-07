@@ -7,5 +7,7 @@ export interface Destinatario {
   'Número': string;
   Rua: string;
   Estado: string; //UF
-  Print: 'Não' | ''; //Permite remover da lista de impressão
+  Print?: 'Não' | ''; //Permite remover da lista de impressão
+  Obs?: string;
+  'Nome Vizinho'?: string; //Permite entregar ao vizinho
 }
