@@ -10,7 +10,7 @@ export default function Etiqueta({
   item
 }: {item: Destinatario}) {
 
-  const hash = item['Nome Completo'] + item.CEP;
+  const hash = item['Nome completo'] + item.CEP;
 
   const generateId= (str: string) => {
     return str.replace(/[^\w\s]/gi, '').replace(/ /g, '');
@@ -18,14 +18,14 @@ export default function Etiqueta({
 
   useEffect(() => {
     if(document.getElementById(generateId(hash))) {
-      JsBarcode(`#${generateId(hash)}`, item.CEP, {displayValue : false});
+      JsBarcode(`#${generateId(hash)}`, item.CEP.replace('-', ''), {displayValue : false, width: 3});
     }
   });
 
   return (
     <div className='tag'>
       <div className='dist'>
-        <p>{item['Nome Completo'].toLowerCase()}</p>
+        <p>{item['Nome completo'].toLowerCase()}</p>
         <p className='street'>{item.Rua}, {item['Número']}, {item.Complemento}</p>
         <p>{item.Bairro}</p>
         <div className='d-flex'>

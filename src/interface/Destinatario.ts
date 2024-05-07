@@ -3,7 +3,7 @@ export interface Destinatario {
   CEP: string;
   Cidade: string;
   Complemento: string;
-  'Nome Completo': string;
+  'Nome completo': string;
   'Número': string;
   Rua: string;
   Estado: string; //UF
