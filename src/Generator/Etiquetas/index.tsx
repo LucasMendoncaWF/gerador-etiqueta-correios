@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import { Destinatario } from '../interface/Destinatario';
+import { Destinatario } from '../../interface/Destinatario';
 
 import Etiqueta from './Etiqueta';
-import XlsParaJsonConversor from './XlsParaJsonConversor';
+import XlsParaJsonConversor from '../XlsParaJsonConversor';
 
 export default function TabelaDeEtiquetas () {
 

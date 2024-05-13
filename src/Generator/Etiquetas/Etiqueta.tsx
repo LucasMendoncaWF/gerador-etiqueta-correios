@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import { Destinatario } from '@app/interface/Destinatario';
 
-import EtiquetaImg from '../assets/etiqueta.png';
-import { remetente } from './Remetente';
+import EtiquetaImg from '../../assets/etiqueta.png';
+import { remetente } from '../Remetente';
+
+import './Etiqueta.scss';
 
 declare const JsBarcode: (id: string, text: string, info: {displayValue: boolean, width: number}) => void;
 
@@ -24,7 +26,7 @@ export default function Etiqueta({
 
   return (
     <div className='tag'>
-      <div className='dist'>
+      <div className='destinatario'>
         <p>{item['Nome completo'].toLowerCase()}</p>
         <p className='street'>{item.Rua}, {item['Número']}, {item.Complemento}</p>
         <p>{item.Bairro}</p>
@@ -42,7 +44,7 @@ export default function Etiqueta({
         <p>{item['Nome Vizinho']}</p>
       </div>}
 
-      <div className='rem'>
+      <div className='remetente'>
         <p><strong>Remetente:</strong> {remetente.nome}</p>
         <p>{remetente.rua} {remetente.numero}</p>
         <p>{remetente.complemento}</p>

@@ -9,5 +9,6 @@ export interface Destinatario {
   Estado: string; //UF
   Print?: 'Não' | ''; //Permite remover da lista de impressão
   Obs?: string;
-  'Nome Vizinho'?: string; //Permite entregar ao vizinho
+  'Nome Vizinho'?: string; //Permite entregar ao vizinho;
+  CPF: string;
 }

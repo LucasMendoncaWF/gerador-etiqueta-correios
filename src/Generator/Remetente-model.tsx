@@ -6,5 +6,6 @@ export const remetente = {
   bairro: '',
   cep: '',
   cidade: '',
-  uf: ''
+  uf: '',
+  cpfcnpj: '',
 }
