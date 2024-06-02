@@ -20,7 +20,8 @@ export default function Etiqueta({
 
   useEffect(() => {
     if(document.getElementById(generateId(hash))) {
-      JsBarcode(`#${generateId(hash)}`, item.CEP.replace('-', ''), {displayValue : false, width: 3});
+      console.log(item.CEP)
+      JsBarcode(`#${generateId(hash)}`, String(item.CEP).replace('-', ''), {displayValue : false, width: 3});
     }
   });
 
@@ -28,7 +29,7 @@ export default function Etiqueta({
     <div className='tag'>
       <div className='destinatario'>
         <p>{item['Nome completo'].toLowerCase()}</p>
-        <p className='street'>{item.Rua}, {item['Número']}, {item.Complemento}</p>
+        <p className='street'>{item.Rua}, {item['Número']}{item.Complemento ? ',' : ''} {item.Complemento}</p>
         <p>{item.Bairro}</p>
         <div className='d-flex'>
           <p className='cep'><strong>{item.CEP}</strong></p>
